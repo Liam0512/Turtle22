@@ -18,8 +18,22 @@ namespace Turtle22
             GreenFrog f4 = new GreenFrog(0, "f4"); 
             GreenFrog f5 = new GreenFrog(1, "f5"); 
             GreenFrog f6 = new GreenFrog(2, "f6");
-            Console.WriteLine(  );
-
+            f6.Move();
+            f0.Jump();
+            f1.Move();
+            f6.Jump();
+            f5.Jump();
+            f4.Move();
+            f0.Move();
+            f0.Jump();
+            f1.Jump();
+            f2.Jump();
+            f6.Move();
+            f5.Jump();
+            f4.Jump();
+            f1.Move();
+            f2.Jump();
+            f4.Move();
         }
     }
 }

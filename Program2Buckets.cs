@@ -14,20 +14,28 @@ namespace Turtle22
         /// </summary>
         static void Main2()
         {
-            Bucket b = new Bucket(20, "main bucket");
-            b.Fill(16);
+            Bucket b = new Bucket(5, "main bucket");
 
-            Bucket b2 = new Bucket(2, "b2");
-            Bucket b7 = new Bucket(7, "b7");
+            Bucket b2 = new Bucket(3, "b2");
 
-            b.PourInto(b2);
-            b2.PourInto(b7);
-            b7.Empty();
-            b.PourInto(b7);
+            // b.PourInto(b2);
+            //b2.PourInto(b7);
+            //b7.Empty();
+            //b.PourInto(b7);
 
-            Console.WriteLine("b : " + b.GetCurrentAmount());
-            Console.WriteLine("b2: " + b2.GetCurrentAmount());
-            Console.WriteLine("b7: " + b7.GetCurrentAmount());
+            //  Console.WriteLine("b : " + b.GetCurrentAmount());
+            // Console.WriteLine("b2: " + b2.GetCurrentAmount());
+            // Console.WriteLine("b7: " + b7.GetCurrentAmount());
+            b2.Fill(3);
+            b2.PourInto(b);
+            b2.Fill(3);
+            b2.PourInto(b);
+            b.Empty();
+            b2.PourInto(b);
+            b2.Fill(3);
+            b2.PourInto(b);
+
+
         }
     }
 }
